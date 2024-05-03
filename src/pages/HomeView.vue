@@ -28,8 +28,8 @@
           </div>
         </div>
         <v-card-text class="text-body-1">
-          Aktuell studiere ich Angewandte Informatik an der Hochschule Heilbronn und 
-          schreibe meine Bachelorarbeit im Bereich der
+          Aktuell studiere ich Angewandte Informatik an der Hochschule Heilbronn
+          und schreibe meine Bachelorarbeit im Bereich der
           <b>Webentwicklung</b>.
         </v-card-text>
       </v-card>
@@ -43,15 +43,27 @@
             <v-col md="6" cols="12">
               <v-card>
                 <v-card-title>
-                  Gym Visitor Stats
-                  <v-btn
-                    flat
-                    icon="mdi-open-in-new"
-                    href="https://gym.marceljacek.me"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </v-btn>
+                  <div class="d-flex align-center justify-space-between">
+                    <div>Gym Visitor Stats</div>
+                    <div>
+                      <v-btn
+                        variant="flat"
+                        href="https://github.com/marceljk/gym-tracker-web"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        icon="mdi-github"
+                      >
+                      </v-btn>
+                      <v-btn
+                        flat
+                        icon="mdi-open-in-new"
+                        href="https://gym.marceljacek.me"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                      </v-btn>
+                    </div>
+                  </div>
                 </v-card-title>
                 <v-card-text>
                   <v-img src="./../assets/gym-stats-screenshot.webp"></v-img>
@@ -68,15 +80,27 @@
             <v-col md="6" cols="12">
               <v-card>
                 <v-card-title>
-                  PV Stats
-                  <v-btn
-                    flat
-                    icon="mdi-open-in-new"
-                    href="https://pv.marceljacek.me"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </v-btn>
+                  <div class="d-flex align-center justify-space-between">
+                    <div>PV Stats</div>
+                    <div>
+                      <v-btn
+                        variant="flat"
+                        href="https://github.com/marceljk/pv_tracker"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        icon="mdi-github"
+                      >
+                      </v-btn>
+                      <v-btn
+                        variant="flat"
+                        href="https://pv.marceljacek.me"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        icon="mdi-open-in-new"
+                      >
+                      </v-btn>
+                    </div>
+                  </div>
                 </v-card-title>
                 <v-card-text>
                   <v-img src="./../assets/pv-tracker-screenshot.webp"></v-img>
