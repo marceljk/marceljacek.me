@@ -37,7 +37,7 @@
       <v-card variant="text">
         <v-card-title class="text-h5">Projekte</v-card-title>
         <v-card-text class="text-body-1">
-          In meiner Freizeit entwickle ich kleine Projekte, um mein Alltag zu
+          In meiner Freizeit entwickle ich kleine Projekte, um meinen Alltag zu
           vereinfachen.
           <v-row class="my-2">
             <v-col md="6" cols="12">
@@ -66,7 +66,10 @@
                   </div>
                 </v-card-title>
                 <v-card-text>
-                  <v-img src="./../assets/gym-stats-screenshot.webp"></v-img>
+                  <v-img
+                    src="./../assets/gym-stats-screenshot.webp"
+                    lazy-src="./../assets/gym-stats-screenshot-low-res.webp"
+                  ></v-img>
                   <div class="mx-1 my-2">
                     Visualisierung der Besucherzahl von einem Fitnessstudio mit
                     Statistiken
@@ -103,13 +106,47 @@
                   </div>
                 </v-card-title>
                 <v-card-text>
-                  <v-img src="./../assets/pv-tracker-screenshot.webp"></v-img>
+                  <v-img
+                    src="./../assets/pv-tracker-screenshot.webp"
+                    lazy-src="./../assets/pv-tracker-screenshot-low-res.webp"
+                  ></v-img>
                   <div class="mx-1 my-2">
                     Darstellung von Live sowie historische Daten einer PV Anlage
                   </div>
                   <div class="mx-1">
                     <b>Techstack:</b> Vue.js · Node.js · Firebase Hosting &
                     Realtime Database
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+            <v-col md="6" cols="12">
+              <v-card>
+                <v-card-title>
+                  <div class="d-flex align-center justify-space-between">
+                    <div>Mon âme Café</div>
+                    <div>
+                      <v-btn
+                        variant="flat"
+                        href="https://moname.cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        icon="mdi-open-in-new"
+                      >
+                      </v-btn>
+                    </div>
+                  </div>
+                </v-card-title>
+                <v-card-text>
+                  <v-img
+                    src="./../assets/mon-ame-screenshot.webp"
+                    lazy-src="./../assets/mon-ame-screenshot-low-res.webp"
+                  ></v-img>
+                  <div class="mx-1 my-2">
+                    Homepage für das Café Mon âme
+                  </div>
+                  <div class="mx-1">
+                    <b>Techstack:</b> Wordpress · Elementor
                   </div>
                 </v-card-text>
               </v-card>
@@ -162,6 +199,35 @@
           </v-timeline>
         </v-card-text>
       </v-card>
+
+      <div class="d-flex justify-space-around">
+        <div class="d-flex ga-2">
+          <v-btn
+            variant="flat"
+            href="https://github.com/marceljk"
+            target="_blank"
+            rel="noopener noreferrer"
+            icon="mdi-github"
+          >
+          </v-btn>
+          <v-btn
+            variant="flat"
+            href="https://www.linkedin.com/in/marcel-jacek-a1298b238/"
+            target="_blank"
+            rel="noopener noreferrer"
+            icon="mdi-linkedin"
+          >
+          </v-btn>
+          <v-btn
+            variant="flat"
+            href="mailto:contact@marceljacek.me"
+            target="_blank"
+            rel="noopener noreferrer"
+            icon="mdi-email"
+          >
+          </v-btn>
+        </div>
+      </div>
     </v-responsive>
   </v-container>
 </template>
