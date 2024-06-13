@@ -1,239 +1,167 @@
 <template>
-  <!-- <HelloWorld /> -->
+  <div>
+    <v-card variant="text">
+      <div class="d-flex align-center justify-space-between">
+        <div style="width: calc(100vw - 150px)">
+          <v-card-title class="text-h5 text-wrap welcome-header">
+            <span>Hi👋</span> <span>Ich bin <b>Marcel</b></span>
+          </v-card-title>
 
-  <v-container class="fill-height">
-    <v-responsive class="align-centerfill-height mx-auto">
-      <v-card variant="text">
-        <div class="d-flex align-center justify-space-between">
-          <div style="width: calc(100vw - 150px)">
-            <v-card-title class="text-h5 text-wrap">
-              Hi👋 Ich bin <b>Marcel</b>
-            </v-card-title>
-
-            <v-card-subtitle class="subtitle">
-              <span>
-                <v-icon>mdi-account</v-icon>
-                Student / Softwareentwickler
-              </span>
-              <span>
-                <v-icon>mdi-map-marker</v-icon>
-                Bad Rappenau, Baden-Württemberg
-              </span>
-            </v-card-subtitle>
-          </div>
-          <div>
-            <v-avatar class="ma-3" size="100">
-              <v-img src="../assets/profilePicture.webp"></v-img>
-            </v-avatar>
-          </div>
+          <v-card-subtitle class="subtitle">
+            <span>
+              <v-icon>mdi-account</v-icon>
+              Student / Software Engineer
+            </span>
+            <span>
+              <v-icon>mdi-map-marker</v-icon>
+              Bad Rappenau, Baden-Württemberg
+            </span>
+          </v-card-subtitle>
         </div>
-        <v-card-text class="text-body-1">
-          Aktuell studiere ich Angewandte Informatik an der Hochschule Heilbronn
-          und schreibe meine Bachelorarbeit im Bereich der
-          <b>Webentwicklung</b>.
-        </v-card-text>
-      </v-card>
-
-      <v-card variant="text">
-        <v-card-title class="text-h5">Projekte</v-card-title>
-        <v-card-text class="text-body-1">
-          In meiner Freizeit entwickle ich kleine Projekte, um meinen Alltag zu
-          vereinfachen.
-          <v-row class="my-2">
-            <v-col md="6" cols="12">
-              <v-card>
-                <v-card-title>
-                  <div class="d-flex align-center justify-space-between">
-                    <div>Gym Visitor Stats</div>
-                    <div>
-                      <v-btn
-                        variant="flat"
-                        href="https://github.com/marceljk/gym-tracker-web"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        icon="mdi-github"
-                      >
-                      </v-btn>
-                      <v-btn
-                        flat
-                        icon="mdi-open-in-new"
-                        href="https://gym.marceljacek.me"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                      </v-btn>
-                    </div>
-                  </div>
-                </v-card-title>
-                <v-card-text>
-                  <v-img
-                    src="./../assets/gym-stats-screenshot.webp"
-                    lazy-src="./../assets/gym-stats-screenshot-low-res.webp"
-                  ></v-img>
-                  <div class="mx-1 my-2">
-                    Visualisierung der Besucherzahl von einem Fitnessstudio mit
-                    Statistiken
-                  </div>
-                  <div class="mx-1">
-                    <b>Techstack:</b> Vue.js · Express.js · SQLite
-                  </div>
-                </v-card-text>
-              </v-card>
-            </v-col>
-            <v-col md="6" cols="12">
-              <v-card>
-                <v-card-title>
-                  <div class="d-flex align-center justify-space-between">
-                    <div>PV Stats</div>
-                    <div>
-                      <v-btn
-                        variant="flat"
-                        href="https://github.com/marceljk/pv_tracker"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        icon="mdi-github"
-                      >
-                      </v-btn>
-                      <v-btn
-                        variant="flat"
-                        href="https://pv.marceljacek.me"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        icon="mdi-open-in-new"
-                      >
-                      </v-btn>
-                    </div>
-                  </div>
-                </v-card-title>
-                <v-card-text>
-                  <v-img
-                    src="./../assets/pv-tracker-screenshot.webp"
-                    lazy-src="./../assets/pv-tracker-screenshot-low-res.webp"
-                  ></v-img>
-                  <div class="mx-1 my-2">
-                    Darstellung von Live sowie historische Daten einer PV Anlage
-                  </div>
-                  <div class="mx-1">
-                    <b>Techstack:</b> Vue.js · Node.js · Firebase Hosting &
-                    Realtime Database
-                  </div>
-                </v-card-text>
-              </v-card>
-            </v-col>
-            <v-col md="6" cols="12">
-              <v-card>
-                <v-card-title>
-                  <div class="d-flex align-center justify-space-between">
-                    <div>Mon âme Café</div>
-                    <div>
-                      <v-btn
-                        variant="flat"
-                        href="https://moname.cafe"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        icon="mdi-open-in-new"
-                      >
-                      </v-btn>
-                    </div>
-                  </div>
-                </v-card-title>
-                <v-card-text>
-                  <v-img
-                    src="./../assets/mon-ame-screenshot.webp"
-                    lazy-src="./../assets/mon-ame-screenshot-low-res.webp"
-                  ></v-img>
-                  <div class="mx-1 my-2">
-                    Homepage für das Café Mon âme
-                  </div>
-                  <div class="mx-1">
-                    <b>Techstack:</b> Wordpress · Elementor
-                  </div>
-                </v-card-text>
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-card-text>
-      </v-card>
-
-      <v-card variant="text">
-        <v-card-title class="text-h5">Lebenslauf</v-card-title>
-        <v-card-text class="text-body-1">
-          <v-timeline align="start" side="end">
-            <v-timeline-item>
-              <template v-slot:opposite>
-                <span>seit 03/2024</span>
-              </template>
-              <div>
-                <div class="text-h6">Bachelorarbeit</div>
-                <div class="text-body-2">Bosch Engineering GmbH</div>
-              </div>
-            </v-timeline-item>
-
-            <v-timeline-item>
-              <template v-slot:opposite>03/2023 - 02/2024</template>
-              <div>
-                <div class="text-h6">
-                  Werkstudent - Full-Stack Webentwickler
-                </div>
-                <div class="text-body-2">Bosch Engineering GmbH</div>
-              </div>
-            </v-timeline-item>
-
-            <v-timeline-item>
-              <template v-slot:opposite>09/2022 - 03/2023</template>
-              <div>
-                <div class="text-h6">Praktikant - Full-Stack Webentwickler</div>
-                <div class="text-body-2">Bosch Engineering GmbH</div>
-              </div>
-            </v-timeline-item>
-
-            <v-timeline-item>
-              <template v-slot:opposite>04/2022 - 01/2023</template>
-              <div>
-                <div class="text-h6">
-                  Werkstudent - Sicherheitsfahrer für autonome Shuttles
-                </div>
-                <div class="text-body-2">Schwarz Mobility Solutions GmbH</div>
-              </div>
-            </v-timeline-item>
-          </v-timeline>
-        </v-card-text>
-      </v-card>
-
-      <div class="d-flex justify-space-around">
-        <div class="d-flex ga-2">
-          <v-btn
-            variant="flat"
-            href="https://github.com/marceljk"
-            target="_blank"
-            rel="noopener noreferrer"
-            icon="mdi-github"
-          >
-          </v-btn>
-          <v-btn
-            variant="flat"
-            href="https://www.linkedin.com/in/marcel-jacek-a1298b238/"
-            target="_blank"
-            rel="noopener noreferrer"
-            icon="mdi-linkedin"
-          >
-          </v-btn>
-          <v-btn
-            variant="flat"
-            href="mailto:contact@marceljacek.me"
-            target="_blank"
-            rel="noopener noreferrer"
-            icon="mdi-email"
-          >
-          </v-btn>
+        <div>
+          <v-avatar class="ma-3" size="100">
+            <v-img src="../assets/profilePicture.webp"></v-img>
+          </v-avatar>
         </div>
       </div>
-    </v-responsive>
-  </v-container>
+      <v-card-text class="text-body-1">
+        I am currently studying Applied Computer Science at Heilbronn University
+        of Applied Sciences and am writing my Bachelor's thesis in the field of
+        <b>web development</b>.
+      </v-card-text>
+    </v-card>
+
+    <v-card variant="text">
+      <v-card-title class="text-h5">Projects</v-card-title>
+      <v-card-text class="text-body-1">
+        <v-row class="my-2">
+          <v-col
+            md="6"
+            cols="12"
+            v-for="project in projects"
+            :key="project.title"
+          >
+            <project-card :modelValue="project"></project-card>
+          </v-col>
+        </v-row>
+      </v-card-text>
+    </v-card>
+
+    <v-card variant="text">
+      <v-card-title class="text-h5">CV</v-card-title>
+      <v-card-text class="text-body-1">
+        <v-timeline align="start" side="end">
+          <v-timeline-item v-for="(item, index) in cv" :key="index">
+            <template v-slot:opposite>
+              <span>{{ item.timeRange }}</span>
+            </template>
+            <div>
+              <div class="text-h6">{{ item.title }}</div>
+              <div class="text-body-2">{{ item.company }}</div>
+            </div>
+          </v-timeline-item>
+        </v-timeline>
+      </v-card-text>
+    </v-card>
+
+    <div class="d-flex justify-space-around">
+      <div class="d-flex ga-2">
+        <v-btn
+          variant="flat"
+          href="https://github.com/marceljk"
+          target="_blank"
+          rel="noopener noreferrer"
+          icon="mdi-github"
+        >
+        </v-btn>
+        <v-btn
+          variant="flat"
+          href="https://www.linkedin.com/in/marcel-jacek-a1298b238/"
+          target="_blank"
+          rel="noopener noreferrer"
+          icon="mdi-linkedin"
+        >
+        </v-btn>
+        <v-btn
+          variant="flat"
+          href="mailto:contact@marceljacek.me"
+          target="_blank"
+          rel="noopener noreferrer"
+          icon="mdi-email"
+        >
+        </v-btn>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script lang="ts" setup>
-//
+type ProjectInfo = {
+  title: string;
+  description: string;
+  techstack: string[];
+  imageSrc: string;
+  lazyImageSrc: string;
+  projectLink: string;
+  githubLink?: string;
+  detailsLink?: string;
+};
+
+const projects: ProjectInfo[] = [
+  {
+    title: "Gym Visitor Stats",
+    description:
+      "A web app that visualises the history of visitors to a fitness studio and also compares this with other days of the week.",
+    techstack: ["Vue.js", "Express.js", "SQLite"],
+    imageSrc: "src/assets/gym-stats-screenshot.webp",
+    lazyImageSrc: "src/assets/gym-stats-screenshot-low-res.webp",
+    githubLink: "https://github.com/marceljk/gym-tracker-web",
+    projectLink: "https://gym.marceljacek.me",
+    detailsLink: "/project/gym-stats"
+  },
+  {
+    title: "PV Stats",
+    description:
+      "A simple dashboard for a PV system to read out the current and historical values of the PV system.",
+    techstack: ["Vue.js", "Node.js", "Firebase Hosting & Realtime Database"],
+    imageSrc: "src/assets/pv-tracker-screenshot.webp",
+    lazyImageSrc: "src/assets/pv-tracker-screenshot-low-res.webp",
+    githubLink: "https://github.com/marceljk/pv_tracker",
+    projectLink: "https://pv.marceljacek.me",
+  },
+  {
+    title: "Mon âme Café",
+    description:
+      "The website is the café's digital business card and contains the opening hours, contact details and menu.",
+    techstack: ["Wordpress", "Elementor"],
+    imageSrc: "src/assets/mon-ame-screenshot.webp",
+    lazyImageSrc: "src/assets/mon-ame-screenshot-low-res.webp",
+    projectLink: "https://moname.cafe",
+  },
+];
+
+const cv = [
+  {
+    title: "Bachelor thesis",
+    company: "Bosch Engineering GmbH",
+    timeRange: "since 03/2024",
+  },
+  {
+    title: "Working Student - Full-Stack Web Developer",
+    company: "Bosch Engineering GmbH",
+    timeRange: "03/2023 - 02/2024",
+  },
+  {
+    title: "Intern - Full-Stack Web Developer",
+    company: "Bosch Engineering GmbH",
+    timeRange: "09/2022 - 03/2023",
+  },
+  {
+    title: "Working student - Safety driver for autonomous shuttles",
+    company: "Schwarz Mobility Solutions GmbH",
+    timeRange: "04/2022 - 01/2023",
+  },
+];
 </script>
 
 <style scoped>
@@ -245,9 +173,12 @@
   display: inline-block;
 }
 
-@media screen and (min-width: 900px) {
-  .v-responsive {
-    max-width: 900px;
-  }
+.welcome-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.welcome-header > * {
+  min-width: fit-content;
 }
 </style>
