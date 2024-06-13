@@ -113,7 +113,7 @@ const projects: ProjectInfo[] = [
     description:
       "A web app that visualises the history of visitors to a fitness studio and also compares this with other days of the week.",
     techstack: ["Vue.js", "Express.js", "SQLite"],
-    imageSrc: "src/assets/gym-stats-screenshot.webp",
+    imageSrc: "/assets/gym-stats-screenshot.webp",
     lazyImageSrc: "src/assets/gym-stats-screenshot-low-res.webp",
     githubLink: "https://github.com/marceljk/gym-tracker-web",
     projectLink: "https://gym.marceljacek.me",
@@ -124,8 +124,8 @@ const projects: ProjectInfo[] = [
     description:
       "A simple dashboard for a PV system to read out the current and historical values of the PV system.",
     techstack: ["Vue.js", "Node.js", "Firebase Hosting & Realtime Database"],
-    imageSrc: "src/assets/pv-tracker-screenshot.webp",
-    lazyImageSrc: "src/assets/pv-tracker-screenshot-low-res.webp",
+    imageSrc: "/assets/pv-tracker-screenshot.webp",
+    lazyImageSrc: "/assets/pv-tracker-screenshot-low-res.webp",
     githubLink: "https://github.com/marceljk/pv_tracker",
     projectLink: "https://pv.marceljacek.me",
   },
@@ -134,8 +134,8 @@ const projects: ProjectInfo[] = [
     description:
       "The website is the café's digital business card and contains the opening hours, contact details and menu.",
     techstack: ["Wordpress", "Elementor"],
-    imageSrc: "src/assets/mon-ame-screenshot.webp",
-    lazyImageSrc: "src/assets/mon-ame-screenshot-low-res.webp",
+    imageSrc: "/assets/mon-ame-screenshot.webp",
+    lazyImageSrc: "/assets/mon-ame-screenshot-low-res.webp",
     projectLink: "https://moname.cafe",
   },
 ];

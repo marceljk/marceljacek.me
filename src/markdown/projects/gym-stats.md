@@ -1,6 +1,6 @@
 # Gym Visitor Stats
 
-<img alt="Screenshot of the webapp" title="Screenshot of the webapp" src="src/assets/gym-stats-screenshot.webp" align="right" class="app-screenshot-image">
+<img alt="Screenshot of the webapp" title="Screenshot of the webapp" src="/assets/gym-stats-screenshot.webp" align="right" class="app-screenshot-image">
 
 [Link to the app](https://gym.marceljacek.me) &nbsp; [Code on Github](https://github.com/marceljk/gym-tracker-web)
 
